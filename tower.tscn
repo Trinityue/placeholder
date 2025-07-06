@@ -2,7 +2,22 @@
 
 [ext_resource type="Script" uid="uid://df08a7wkh8vir" path="res://Code/Tower.cs" id="1_stebd"]
 [ext_resource type="PackedScene" uid="uid://dpivechu4fypg" path="res://bullet.tscn" id="2_stebd"]
-[ext_resource type="Texture2D" uid="uid://b6cu2350qde6u" path="res://Crossbow_Turret_Bow (2).png" id="3_stebd"]
+[ext_resource type="Texture2D" uid="uid://b6cu2350qde6u" path="res://GameRecources/Crossbow_Turret_Bow (2).png" id="3_stebd"]
+
+[sub_resource type="Animation" id="Animation_vxmma"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
 
 [sub_resource type="Animation" id="Animation_jbe1c"]
 resource_name = "shoot"
@@ -20,21 +35,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [1, 3, 5, 7, 9, 11, 13, 15, 17]
-}
-
-[sub_resource type="Animation" id="Animation_vxmma"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lny5m"]

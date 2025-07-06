@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwcbahovdeot3"
+path="res://.godot/imported/button-click-289742 (1).mp3-86f2bbe45d7cb2814fbed6f51f531f6e.mp3str"
+
+[deps]
+
+source_file="res://GameRecources/GameMusic/button-click-289742 (1).mp3"
+dest_files=["res://.godot/imported/button-click-289742 (1).mp3-86f2bbe45d7cb2814fbed6f51f531f6e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
