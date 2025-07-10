@@ -2,14 +2,14 @@ using Godot;
 using System;
 using System.Runtime;
 
-public partial class InfernoTower : Node2D
+public partial class SniperTower : Node2D
 {
     [Export] public PackedScene BulletScene;
     [Export] public Node2D Spawner;
     [Export] public float bps = 1f; // bullets per second
     [Export] public float MinSpeed = 80f;
     [Export] public float MaxSpeed = 150f;
-    [Export] public float AttackRange = 100f;
+    [Export] public float AttackRange = 1000f;
     public Enemy Target { get; set; }
 
     public float spawnRate;
@@ -37,6 +37,7 @@ public partial class InfernoTower : Node2D
                 // Beispiel: e.FlashColor(Colors.Red, 0.2f);
             }
         }
+        
     }
 
     private void TryShootAtNearestEnemy()
