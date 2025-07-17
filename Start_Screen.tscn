@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bkput3ddcivrd"]
+[gd_scene load_steps=12 format=3 uid="uid://bkput3ddcivrd"]
 
 [ext_resource type="Texture2D" uid="uid://rh3cftbpepfk" path="res://Background_Game.png" id="1_q5oj5"]
 [ext_resource type="Texture2D" uid="uid://de1kvajixk7f2" path="res://New Piskel-1.png (1)-1.png.png" id="2_q5oj5"]
@@ -11,11 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://bhk47pka238l0" path="res://Settings_Button_Pressed.png.png" id="7_huokf"]
 [ext_resource type="Texture2D" uid="uid://bbgkaskwk1ejm" path="res://Settings_Button_Hover.png.png" id="8_fysvg"]
 [ext_resource type="Script" uid="uid://g4wywmuapul5" path="res://SettingsButton.cs" id="9_huokf"]
-[ext_resource type="Texture2D" uid="uid://8oeb3eepd0si" path="res://MusicOn_Normal.png.png" id="12_si72g"]
-[ext_resource type="Texture2D" uid="uid://bcfv4e603h6y0" path="res://MusicOn_Hover.png.png" id="14_5viff"]
-[ext_resource type="Texture2D" uid="uid://dw8lbr7du2x2f" path="res://MusicOff_Normal.png.png" id="15_4i8q6"]
-[ext_resource type="Texture2D" uid="uid://dm0fg8hshy1sd" path="res://MusicOff_Hover.png.png" id="16_y14f7"]
-[ext_resource type="Script" uid="uid://b6blad3nwrb5m" path="res://MusicButton.cs" id="17_nxtlc"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(344, 299)
@@ -33,13 +28,13 @@ offset_bottom = 391.0
 texture_normal = ExtResource("2_q5oj5")
 texture_pressed = ExtResource("3_y7cqw")
 texture_hover = ExtResource("4_4og4g")
-script = ExtResource("5_dj0k1")
+script = ExtResource("5_elp2q")
 
 [node name="Buttonclicksound" type="AudioStreamPlayer2D" parent="StartButton"]
 position = Vector2(-349, -135)
-stream = ExtResource("6_fysvg")
+stream = ExtResource("6_elp2q")
 volume_db = 8.914
-script = ExtResource("7_fwop1")
+script = ExtResource("7_sq3b4")
 
 [node name="SettingsButton" type="TextureButton" parent="."]
 offset_left = -294.0
@@ -49,11 +44,11 @@ offset_bottom = 736.0
 texture_normal = ExtResource("6_dj0k1")
 texture_pressed = ExtResource("7_huokf")
 texture_hover = ExtResource("8_fysvg")
-script = ExtResource("9_huokf")
+script = ExtResource("11_uf1lf")
 
 [node name="Buttonclicksound2" type="AudioStreamPlayer2D" parent="SettingsButton"]
 position = Vector2(294, -608)
-stream = ExtResource("6_fysvg")
+stream = ExtResource("6_elp2q")
 
 [node name="MusicButton" type="TextureButton" parent="."]
 offset_left = -208.0
@@ -69,5 +64,3 @@ script = ExtResource("17_nxtlc")
 
 [connection signal="pressed" from="StartButton" to="StartButton" method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="SettingsButton" to="SettingsButton" method="pressed_Setting"]
-[connection signal="pressed" from="MusicButton" to="MusicButton" method="_on_pressed"]
-[connection signal="toggled" from="MusicButton" to="MusicButton" method="_on_toggled"]

@@ -1,5 +1,3 @@
-[gd_scene load_steps=15 format=4 uid="uid://c7ifkm12gdj6k"]
-
 [ext_resource type="TileSet" uid="uid://5c8oyqo7tpix" path="res://Map_V_2.tres" id="1_0e48y"]
 [ext_resource type="Script" uid="uid://b8ltrkm78a6tx" path="res://Code/GameManager.cs" id="1_d21ai"]
 [ext_resource type="Script" uid="uid://d8lxftnjvpoq" path="res://Code/EnemySpawner.cs" id="2_q6r6c"]
@@ -10,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://fi6rp7x77p5t" path="res://tower.tscn" id="5_kdubu"]
 [ext_resource type="Texture2D" uid="uid://t6m5n07nqmwp" path="res://HealthPoints_UI.png" id="6_0h7mo"]
 [ext_resource type="PackedScene" uid="uid://cnkslcoxcla51" path="res://Enemy_II.tscn" id="6_d21ai"]
-[ext_resource type="PackedScene" uid="uid://tnpgx4wfxn6c" path="res://money_managment.tscn" id="6_kdubu"]
+[ext_resource type="PackedScene" path="res://money_managment.tscn" id="6_kdubu"]
 [ext_resource type="Script" uid="uid://cpc1mf5idtx8i" path="res://Code/SpawnerIi.cs" id="7_rj586"]
 [ext_resource type="Texture2D" uid="uid://cb6yukhpxgx2i" path="res://Coin_UI.png.png" id="8_x0ka3"]
 

@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://xlcsrtir1d0w"]
+
+[ext_resource type="Script" uid="uid://b3grutuycwfm3" path="res://Code/SniperBullets.cs" id="1_45r16"]
+[ext_resource type="Texture2D" uid="uid://d0xtgbxbv8wdk" path="res://GameRecources/Arrow_bullet.png.png" id="2_fo4vf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i0loa"]
+size = Vector2(500, 1275)
+
+[node name="Sniper_Bullets" type="Node2D"]
+script = ExtResource("1_45r16")
+
+[node name="ArrowBullet_png" type="Sprite2D" parent="."]
+position = Vector2(1.52588e-05, -1.52588e-05)
+scale = Vector2(0.689453, 0.90918)
+texture = ExtResource("2_fo4vf")
+
+[node name="ArrowBullet_png2" type="Sprite2D" parent="."]
+position = Vector2(1.52588e-05, -1.52588e-05)
+scale = Vector2(0.689453, 0.90918)
+texture = ExtResource("2_fo4vf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3.8147e-06, -4.99999)
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_i0loa")
